@@ -19,42 +19,53 @@
 
  <!---------------------- SIDEBAR ------------------------>
 <!-- Sidebar -->
-  <div id="sidebar-wrapper">
-    <ul class="sidebar-nav" style="margin-left:0;">
-        <li class="sidebar-brand">
-            
-                <a href="#menu-toggle"  id="menu-toggle" style="margin-top:20px;float:right;" > <i class="fa fa-bars " style="font-size:20px !Important;" aria-hidden="true" aria-hidden="true"></i> 
-            
-        </li>
-        <li>
-            <a href="#"><i class="fa fa-sort-alpha-asc " aria-hidden="true"> </i> <span style="margin-left:10px;">Section</span>  </a>
-        </li>
-        <li>
-            <a href="#"> <i class="fa fa-play-circle-o " aria-hidden="true"> </i> <span style="margin-left:10px;"> Section</span> </a>
-        </li>
-        <li>
-            <a href="#"> <i class="fa fa-puzzle-piece" aria-hidden="true"> </i> <span style="margin-left:10px;"> Section</span> </a>
-        </li>
-        <li>
-            <a href="#"> <i class="fa fa-font" aria-hidden="true"> </i> <span style="margin-left:10px;"> Section</span> </a>
-        </li>
-        <li>
-            <a href="#"><i class="fa fa-info-circle " aria-hidden="true"> </i> <span style="margin-left:10px;">Section </span> </a>
-        </li>
-        <li>
-            <a href="#"> <i class="fa fa-comment-o" aria-hidden="true"> </i> <span style="margin-left:10px;"> Section</span> </a>
-        </li>
-    </ul>
+  <div id="wrapper">
+    <div id="sidebar-wrapper">
+      <ul class="sidebar-nav" style="margin-left:0;">
+          <li class="sidebar-brand">
+              
+                  <a href="#menu-toggle"  id="menu-toggle" style="margin-top:20px;float:right;" > <i class="fa fa-bars " style="font-size:20px !Important;" aria-hidden="true" aria-hidden="true"></i> 
+              
+          </li>
+          <li>
+              <a href="#"><i class="fa fa-sort-alpha-asc " aria-hidden="true"> </i> <span style="margin-left:10px;">Section</span>  </a>
+          </li>
+          <li>
+              <a href="#"> <i class="fa fa-play-circle-o " aria-hidden="true"> </i> <span style="margin-left:10px;"> Section</span> </a>
+          </li>
+          <li>
+              <a href="#"> <i class="fa fa-puzzle-piece" aria-hidden="true"> </i> <span style="margin-left:10px;"> Section</span> </a>
+          </li>
+          <li>
+              <a href="#"> <i class="fa fa-font" aria-hidden="true"> </i> <span style="margin-left:10px;"> Section</span> </a>
+          </li>
+          <li>
+              <a href="#"><i class="fa fa-info-circle " aria-hidden="true"> </i> <span style="margin-left:10px;">Section </span> </a>
+          </li>
+          <li>
+              <a href="#"> <i class="fa fa-comment-o" aria-hidden="true"> </i> <span style="margin-left:10px;"> Section</span> </a>
+          </li>
+      </ul>
+    </div>
   </div>
 
 
-<div class="content-container">
+  <div class="content-container">
 
-  <div class="container-fluid">
+    <div class="container-fluid">
 
 
 
 <!----------- HEADER -------------->
+    <div class="jumbotron jumbotron-fluid text-center d-flex flex-column justify-content-center align-items-center hero-background-img mb-5">
+      <h1 class="display-4">VArify</h1>
+        <p class="lead">Who's That Voice?</p>
+        <form class="form-inline">
+          <input class="form-control border-0" name="query"  type="text" placeholder="Try &quot;Pixel Art&quot;">
+          <button class="btn btn-success justify-content-center" type="submit">Search</button>
+        </form>
+      </div>
+
 
 <!----------- SEARCH -------------->
 
@@ -85,10 +96,10 @@
 </script>
 <script>
   $("#menu-toggle").click(function(e) {
-      e.preventDefault();
-      $("#wrapper").toggleClass("toggled");
+    e.preventDefault();
+    $("#wrapper").toggleClass("toggled");
   });
-  </script>
+</script>
 
 
 </body>
