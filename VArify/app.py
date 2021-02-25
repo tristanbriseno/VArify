@@ -18,8 +18,8 @@ pp = PrettyPrinter(indent=4)
 def page():
     """Display the web page."""
 
-    first_name = request.args.get('first-name-query')
-    last_name = request.args.get('last-name-query')
+    full_name = request.args.get('full-name')
+    character_list = []
 
 
     query = '''
@@ -38,7 +38,7 @@ def page():
         }
         '''
     variables = {
-    'name': 'Michael Tatum'
+    'name': full_name
         }
 
     url = 'https://graphql.anilist.co'
@@ -47,11 +47,20 @@ def page():
     result_json = requests.post(url, json={'query': query, 'variables': variables})
     json_response = json.loads(result_json.text)
     
-    pp.pprint(json_response["data"]["Staff"]["characters"]["nodes"][0]["id"])
+
+    for i in range(len(json_response["data"]["Staff"]["characters"]["nodes"])):
+        character_list.append(json_response["data"]["Staff"]["characters"]["nodes"][i]["name"])
+    
+    
+
+    # while json_response["data"]["Staff"]["characters"]["nodes"][i] != None:
+    #     print(i["name"])
+    
     
     context = {
-        'first_name': first_name,
-        'last_name': last_name
+        'full_name': full_name,
+        "character_list": character_list
+        
        
     }
     return render_template('index.html', **context)
