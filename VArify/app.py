@@ -17,31 +17,37 @@ pp = PrettyPrinter(indent=4)
 def page():
     """Display the web page."""
 
-    #Getting the first and last name of a character in an anime for use in our API call. 
-    first_name = request.args.get('first-name-query')
-    last_name = request.args.get('last-name-query')
+    query = '''
+        query ($id: Int) { # Define which variables will be used in the query (id)
+        Media (id: $id, type: ANIME) { # Insert our variables into the query arguments (id) (type: ANIME is hard-coded in the query)
+            id
+            title {
+            romaji
+            english
+            native
+            }
+        }
+        }
+        '''
 
-    url = 'https://private-2139da-animedb.apiary-mock.com/api/characters'
+    # Define our query variables and values that will be used in the query request
+    variables = {
+    'id': 15125
+    }
 
-    # # params = {
+    url = 'https://graphql.anilist.co'
 
-    # #     # 'app_id': '8f2c6d67',
-    # #     # 'app_key': 'e5e5bdc2fdb7f36e504cc8478d9f88fe',
-    # #      'first_name': first_name
-    # #     # 'last_name': last_name
+    # Make the HTTP Api request
+    response = requests.post(url, json={'query': query, 'variables': variables})
 
-    # # }
-
-    # result_json = requests.get(url).json()
-    # # pp.pprint(result_json)
+    pp.pprint(response)
     context = {
-        # 'description': result_json[0]['description'],
-        'first_name': first_name,
-        'last_name':last_name
         
-
+        'id': variables['id']
 
     }
+
+
 
     return render_template('index.html', **context)
 
