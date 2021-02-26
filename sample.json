@@ -1,0 +1,81 @@
+{
+    "data":{
+       "Character":{
+          "id":90225,
+          "name":{
+             "full":"Victor Nikiforov"
+          },
+          "image":{
+             "large":"https:\/\/s4.anilist.co\/file\/anilistcdn\/character\/large\/b90225-5NweNvd4YiDr.png"
+          },
+          "media":{
+             "edges":[
+                {
+                   "voiceActors":[
+                      {
+                         "image":{
+                            "large":"https:\/\/s4.anilist.co\/file\/anilistcdn\/staff\/large\/n95095-DvSjTQnqcgXP.png"
+                         },
+                         "name":{
+                            "full":"Junichi Suwabe"
+                         },
+                         "language":"JAPANESE"
+                      },
+                      {
+                         "image":{
+                            "large":"https:\/\/s4.anilist.co\/file\/anilistcdn\/staff\/large\/302.jpg"
+                         },
+                         "name":{
+                            "full":"Jerry Jewell"
+                         },
+                         "language":"ENGLISH"
+                      }
+                   ],
+                   "node":{
+                      "title":{
+                         "romaji":"Yuri!!! on Ice",
+                         "english":"Yuri!!! On Ice",
+                         "native":"ユーリ!!! on ICE",
+                         "userPreferred":"Yuri!!! on Ice"
+                      },
+                      "coverImage":{
+                         "large":"https:\/\/s4.anilist.co\/file\/anilistcdn\/media\/anime\/cover\/medium\/bx21709-yA9pmWiUJrQZ.png"
+                      },
+                      "type":"ANIME"
+                   }
+                },
+                {
+                   "voiceActors":[
+                      
+                   ],
+                   "node":{
+                      "title":{
+                         "romaji":"Yuri!!! on Ice Bangaihen: Welcome to The Madness",
+                         "english":null,
+                         "native":"ユーリ!!! on ICE 番外編 Welcome to The Madness",
+                         "userPreferred":"Yuri!!! on Ice Bangaihen: Welcome to The Madness"
+                      },
+                      "coverImage":{
+                         "large":"https:\/\/s4.anilist.co\/file\/anilistcdn\/media\/manga\/cover\/medium\/bx124083-UhGc7ZH6CGGr.png"
+                      },
+                      "type":"MANGA"
+                   }
+                }
+             ]
+          }
+       }
+    }
+ }
+
+
+
+ [{'image': 
+    {'large': 
+        'https://s4.anilist.co/file/anilistcdn/staff/large/n95095-DvSjTQnqcgXP.png'}, 
+        'name': {'full': 'Junichi Suwabe'}, 
+        'language': 'JAPANESE'}, 
+        {'image': 
+            {'large': 'https://s4.anilist.co/file/anilistcdn/staff/large/302.jpg'}, 
+            'name': 
+            {'full': 'Jerry Jewell'}, 
+            'language': 'ENGLISH'}] []
