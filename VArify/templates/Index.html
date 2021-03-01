@@ -9,7 +9,7 @@
   <!-- FONTS -->
   
   <!-- CSS -->
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="static/assets/css/styles.css">
   <!-- BOOTSTRAP -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/litera/bootstrap.min.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
@@ -37,9 +37,9 @@
       <h1 class="display-4">VArify</h1>
         <p class="lead">Who's That Voice?</p>
         <form class="form-inline">
-          <input class="form-control border-0" name="first-name-query"  type="text" placeholder="First Name">
+          <input class="form-control border-0" name="full-name"  type="text" placeholder="Full Name">
         
-          <input class="form-control border-0" name="last-name-query"  type="text" placeholder="Last Name">
+          
           <button class="btn btn-success justify-content-center" type="submit">Search</button>
         </form>
       </div>
@@ -60,8 +60,10 @@
             <img class="img-fluid" src="http://res.cloudinary.com/d3/image/upload/c_pad,g_center,h_200,q_auto:eco,w_200/bootstrap-logo_u3c8dx.jpg" alt="Avatar" />
           </div>
           <div class="card-body" style="overflow-y: auto">
-            <h4 class="card-title">{{first_name}} {{last_name}}</h4>
-            <p class="card-text">{{description}}</p>
+            <h4 class="card-title">{{full_name}} Characters</h4>
+            <p class="card-text" name="character-info">
+              {{character_list}}
+            </p>
           </div>
           <div class="card-footer" style="background: inherit; border-color: inherit;">
             <a href="#" class="btn btn-primary">More</a>
