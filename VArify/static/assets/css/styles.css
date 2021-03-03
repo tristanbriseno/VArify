@@ -47,14 +47,19 @@
 
 /* FORM */
 
+
 .form-control {
   width: 500px !important;
+  background-color: #f2f9fa !important;
 }
 
 .btn {
   border-radius: 8px !important;
 }
 
+::placeholder {
+  color: #b1c7cc !important;
+}
 
 /* CARDS */
 
