@@ -101,6 +101,7 @@
   left: 1.25rem;
   width: 100px;
   height: 100px;
+  object-fit: cover;
 }
 
 @media screen and (max-height: 450px) {
