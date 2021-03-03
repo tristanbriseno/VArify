@@ -16,6 +16,7 @@ As a matter of fact, all of our meetings went well, the energy was always high, 
 _____________________________________________________________________________________________________
 
 We were thankful to have such a great team. Our team name is BOAT, and we consist of:
+
 Brian Ross -
 Our Amazing back-end web lead had to work on our API for the site. 
 He worked very diligently, and I think I can say for all of the BOAT, we wouldn't be this far without his work.
