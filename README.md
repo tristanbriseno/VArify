@@ -8,9 +8,12 @@ The features don't end there as you can see a list of shows and pick and choose 
 
 We came about this idea while jotting down our interest and talking about a manageable project. 
 To our surprise, it wasn't such an easy task as there were creative roadblocks and technical complications.
-Since I believe this was our first group project as developers where we all take an individual role, there was a bit of uncertainty of the project's direction, 
+Since I believe this was our first group project as developers where we all take an individual role, 
+there was a bit of uncertainty of the project's direction, 
 but it doesn't mean we weren't excited to work with each other. 
 As a matter of fact, all of our meetings went well, the energy was always high, and we were still willing to take on new ideas. 
+
+_____________________________________________________________________________________________________
 
 We were thankful to have such a great team. Our team name is BOAT, and we consist of:
 Brian Ross -
