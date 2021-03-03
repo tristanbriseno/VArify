@@ -63,6 +63,8 @@ def page():
     '''
     variables = {
         'name': full_name
+        
+        
     }
 
     url = 'https://graphql.anilist.co'
@@ -77,12 +79,17 @@ def page():
         character_list = json_response["data"]["Character"]["media"]["edges"][i]['voiceActors']
         for i in character_list:
             character_name.append(i["name"])
-    print(character_name)       
+
+    char_image = json_response["data"]["Character"]["image"]["large"]
+    va_img = json_response["data"]["Character"]["media"]["edges"][0]["voiceActors"][0]["image"]["large"]
+    print(char_image)       
 
     
     context = {
         'full_name': full_name,
-        "character_list": character_name[0]["full"]
+        "character_list": character_name[0]["full"],
+        "char_image":char_image,
+        "va_img": va_img
         
        
     }
@@ -90,10 +97,31 @@ def page():
 
 
 
-@app.route('/shows')
+@app.route('/shows.html')
 def shows():
     """returns a bunch of stuff"""
     return render_template('shows.html')
+
+@app.route('/search_return.html')
+def search_return():
+    """returns a bunch of stuff"""
+    return render_template('search_return.html')
+
+@app.route('/profile.html')
+def profile():
+    """returns a bunch of stuff"""
+    return render_template('profile.html')
+
+@app.route('/developers.html')
+def developers():
+    """returns a bunch of stuff"""
+    return render_template('developers.html')
+
+
+
+
+
+
 
 
 

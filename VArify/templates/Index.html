@@ -9,7 +9,7 @@
   <!-- FONTS -->
   
   <!-- CSS -->
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="static/assets/css/styles.css">
   <!-- BOOTSTRAP -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/litera/bootstrap.min.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
@@ -21,11 +21,11 @@
  <div id="mySidenav" class="sidenav">
   <a class="navbar-brand" href="/">
     <div class="logo-image">
-          <img src="images/VArifyLogo.png" width="100" height="80">
+          <img src="static/assets/images/VArifyLogo1.png" width="100">
     </div>
 </a>
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a class="nav-link" href="Index.html">HOME<span class="sr-only">(current)</span></a>
+  <a class="nav-link" href="index.html">HOME<span class="sr-only">(current)</span></a>
   <a class="nav-link" href="search_return.html">SEARCH<span class="sr-only">(current)</span></a>
   <a class="nav-link" href=".html">F.A.Q<span class="sr-only">(current)</span></a>
   <a class="nav-link" href="developers.html">DEVELOPERS<span class="sr-only">(current)</span></a>
@@ -37,15 +37,15 @@
 
 
 
-
+<div id="main">
 <!----------- HEADER -------------->
     <div class="jumbotron jumbotron-fluid text-center d-flex flex-column justify-content-center align-items-center hero-background-img mb-5">
       <h1 class="display-4">VArify</h1>
         <p class="lead">Who's That Voice?</p>
         <form class="form-inline">
-          <input class="form-control border-0" name="first-name-query"  type="text" placeholder="First Name">
+          <input class="form-control border-0" name="full-name"  type="text" placeholder="Full Name">
         
-          <input class="form-control border-0" name="last-name-query"  type="text" placeholder="Last Name">
+          
           <button class="btn btn-success justify-content-center" type="submit">Search</button>
         </form>
       </div>
@@ -61,13 +61,17 @@
     <div class="row">
       <div class="col">
         <div class="card card-custom bg-white border-white border-0">
-          <div class="card-custom-img" style="background-image: url(http://res.cloudinary.com/d3/image/upload/c_scale,q_auto:good,w_1110/trianglify-v1-cs85g_cc5d2i.jpg);"></div>
+          <div class="card-custom-img" style="background-image: url({{char_image}});"></div>
           <div class="card-custom-avatar">
-            <img class="img-fluid" src="http://res.cloudinary.com/d3/image/upload/c_pad,g_center,h_200,q_auto:eco,w_200/bootstrap-logo_u3c8dx.jpg" alt="Avatar" />
+            <img class="img-fluid" src="{{va_img}}" alt="Avatar" />
           </div>
           <div class="card-body" style="overflow-y: auto">
-            <h4 class="card-title">{{first_name}} {{last_name}}</h4>
-            <p class="card-text">{{description}}</p>
+            <h4 class="card-title">{{full_name}}</h4>
+            <p class="card-text text-muted"> Bio</p>
+            <ul>
+              <li>{{character_list}}<i class="text-muted">- Voice Actor</i></li>
+              
+            </ul>
           </div>
           <div class="card-footer" style="background: inherit; border-color: inherit;">
             <a href="#" class="btn btn-primary">More</a>
@@ -77,13 +81,18 @@
 
       <div class="col">
         <div class="card card-custom bg-white border-white border-0">
-          <div class="card-custom-img" style="background-image: url(http://res.cloudinary.com/d3/image/upload/c_scale,q_auto:good,w_1110/trianglify-v1-cs85g_cc5d2i.jpg);"></div>
+          <div class="card-custom-img" style="background-image: url(https://wallpapercave.com/wp/wp4091330.jpg);"></div>
           <div class="card-custom-avatar">
-            <img class="img-fluid" src="http://res.cloudinary.com/d3/image/upload/c_pad,g_center,h_200,q_auto:eco,w_200/bootstrap-logo_u3c8dx.jpg" alt="Avatar" />
+            <img class="img-fluid" src="static/assets/images/kanahana.jpg" alt="Avatar" />
           </div>
           <div class="card-body" style="overflow-y: auto">
-            <h4 class="card-title">Card title</h4>
-            <p class="card-text">Card has minimum height set but will expand if more space is needed for card body content. You can use Bootstrap card-decks to align multiple cards nicely in a row.</p>
+            <h4 class="card-title">Kana Hanazawa</h4>
+            <p class="card-text text-muted">Notable Roles</p>
+            <ul>
+              <li>Nadeko Sengoku <i class="text-muted">- Monogatari Series</i></li>
+              <li>Chiaki Nanami <i class="text-muted">- Danganronpa 2</i></li>
+              <li>Kanade Tachibana <i class="text-muted">- Angel Beats!</i></li>
+            </ul>
           </div>
           <div class="card-footer" style="background: inherit; border-color: inherit;">
             <a href="#" class="btn btn-primary">More</a>
@@ -93,13 +102,18 @@
       
       <div class="col">
         <div class="card card-custom bg-white border-white border-0">
-          <div class="card-custom-img" style="background-image: url(http://res.cloudinary.com/d3/image/upload/c_scale,q_auto:good,w_1110/trianglify-v1-cs85g_cc5d2i.jpg);"></div>
+          <div class="card-custom-img" style="background-image: url(https://i.pinimg.com/originals/7b/2a/99/7b2a99def37280d998abedbf669b733c.jpg);"></div>
           <div class="card-custom-avatar">
-            <img class="img-fluid" src="http://res.cloudinary.com/d3/image/upload/c_pad,g_center,h_200,q_auto:eco,w_200/bootstrap-logo_u3c8dx.jpg" alt="Avatar" />
+            <img class="img-fluid" src="static/assets/images/kamiya.jpg" alt="Avatar" />
           </div>
           <div class="card-body" style="overflow-y: auto">
-            <h4 class="card-title">Card title</h4>
-            <p class="card-text">Card has minimum height set but will expand if more space is needed for card body content. You can use Bootstrap card-decks to align multiple cards nicely in a row.</p>
+            <h4 class="card-title">Hiroshi Kamiya</h4>
+            <p class="card-text text-muted">Notable Roles</p>
+            <ul>
+              <li>Levi Ackerman <i class="text-muted">- Attack on Titan</i></li>
+              <li>Izaya Orihara <i class="text-muted">- Durarara!!</i></li>
+              <li>Yato <i class="text-muted">- Noragami</i></li>
+            </ul>
           </div>
           <div class="card-footer" style="background: inherit; border-color: inherit;">
             <a href="#" class="btn btn-primary">More</a>
@@ -109,16 +123,21 @@
 
     </div>
     
-    <div class="row">
+    <div class="row pt-5">
       <div class="col">
         <div class="card card-custom bg-white border-white border-0">
-          <div class="card-custom-img" style="background-image: url(http://res.cloudinary.com/d3/image/upload/c_scale,q_auto:good,w_1110/trianglify-v1-cs85g_cc5d2i.jpg);"></div>
+          <div class="card-custom-img" style="background-image: url(https://wallpapercave.com/wp/wp2307220.jpg);"></div>
           <div class="card-custom-avatar">
-            <img class="img-fluid" src="http://res.cloudinary.com/d3/image/upload/c_pad,g_center,h_200,q_auto:eco,w_200/bootstrap-logo_u3c8dx.jpg" alt="Avatar" />
+            <img class="img-fluid" src="static/assets/images/rie.jpg" alt="Avatar" />
           </div>
           <div class="card-body" style="overflow-y: auto">
-            <h4 class="card-title">Card title</h4>
-            <p class="card-text">Card has minimum height set but will expand if more space is needed for card body content. You can use Bootstrap card-decks to align multiple cards nicely in a row.</p>
+            <h4 class="card-title">Rie Kugimiya</h4>
+            <p class="card-text text-muted">Notable Roles</p>
+            <ul>
+              <li>Taiga Aisaka <i class="text-muted">- Toradora!</i></li></li>
+              <li>Iori Minase <i class="text-muted">- The iDOLM@STER</i></li></li>
+              <li>Alphonse Elric <i class="text-muted">- Fullmetal Alchemist</i></li></li>
+            </ul>
           </div>
           <div class="card-footer" style="background: inherit; border-color: inherit;">
             <a href="#" class="btn btn-primary">More</a>
@@ -128,13 +147,18 @@
 
       <div class="col">
         <div class="card card-custom bg-white border-white border-0">
-          <div class="card-custom-img" style="background-image: url(http://res.cloudinary.com/d3/image/upload/c_scale,q_auto:good,w_1110/trianglify-v1-cs85g_cc5d2i.jpg);"></div>
+          <div class="card-custom-img" style="background-image: url(https://i.ytimg.com/vi/0_uA9EwmMJk/maxresdefault.jpg);"></div>
           <div class="card-custom-avatar">
-            <img class="img-fluid" src="http://res.cloudinary.com/d3/image/upload/c_pad,g_center,h_200,q_auto:eco,w_200/bootstrap-logo_u3c8dx.jpg" alt="Avatar" />
+            <img class="img-fluid" src="static/assets/images/yuki.jpg" alt="Avatar" />
           </div>
           <div class="card-body" style="overflow-y: auto">
-            <h4 class="card-title">Card title</h4>
-            <p class="card-text">Card has minimum height set but will expand if more space is needed for card body content. You can use Bootstrap card-decks to align multiple cards nicely in a row.</p>
+            <h4 class="card-title">Yuki Kaji</h4>
+            <p class="card-text text-muted">Notable Roles</p>
+            <ul>
+              <li>Nadeko Sengoku</li>
+              <li>Chiaki Nanami</li>
+              <li>Kanade Tachibana</li>
+            </ul>
           </div>
           <div class="card-footer" style="background: inherit; border-color: inherit;">
             <a href="#" class="btn btn-primary">More</a>
@@ -144,13 +168,18 @@
       
       <div class="col">
         <div class="card card-custom bg-white border-white border-0">
-          <div class="card-custom-img" style="background-image: url(http://res.cloudinary.com/d3/image/upload/c_scale,q_auto:good,w_1110/trianglify-v1-cs85g_cc5d2i.jpg);"></div>
+          <div class="card-custom-img" style="background-image: url(https://www.wallpaperup.com/uploads/wallpapers/2015/09/26/809651/3081936760aa8f7de66cb46bf5456778.jpg);"></div>
           <div class="card-custom-avatar">
-            <img class="img-fluid" src="http://res.cloudinary.com/d3/image/upload/c_pad,g_center,h_200,q_auto:eco,w_200/bootstrap-logo_u3c8dx.jpg" alt="Avatar" />
+            <img class="img-fluid" src="static/assets/images/daisuke.jpg" alt="Avatar" />
           </div>
           <div class="card-body" style="overflow-y: auto">
-            <h4 class="card-title">Card title</h4>
-            <p class="card-text">Card has minimum height set but will expand if more space is needed for card body content. You can use Bootstrap card-decks to align multiple cards nicely in a row.</p>
+            <h4 class="card-title">Daisuke Ono</h4>
+            <p class="card-text text-muted">Notable Roles</p>
+            <ul>
+              <li>Nadeko Sengo</li>
+              <li>Chiaki Nanami</li>
+              <li>Kanade Tachibana</li>
+            </ul>
           </div>
           <div class="card-footer" style="background: inherit; border-color: inherit;">
             <a href="#" class="btn btn-primary">More</a>
@@ -159,6 +188,7 @@
       </div>
 
     </div>
+  </div>
 
 </div>
 </div>
