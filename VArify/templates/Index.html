@@ -25,7 +25,7 @@
     </div>
 </a>
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a class="nav-link" href="Index.html">HOME<span class="sr-only">(current)</span></a>
+  <a class="nav-link" href="index.html">HOME<span class="sr-only">(current)</span></a>
   <a class="nav-link" href="search_return.html">SEARCH<span class="sr-only">(current)</span></a>
   <a class="nav-link" href=".html">F.A.Q<span class="sr-only">(current)</span></a>
   <a class="nav-link" href="developers.html">DEVELOPERS<span class="sr-only">(current)</span></a>
@@ -43,9 +43,9 @@
       <h1 class="display-4">VArify</h1>
         <p class="lead">Who's That Voice?</p>
         <form class="form-inline">
-          <input class="form-control border-0" name="first-name-query"  type="text" placeholder="First Name">
+          <input class="form-control border-0" name="full-name"  type="text" placeholder="Full Name">
         
-          <input class="form-control border-0" name="last-name-query"  type="text" placeholder="Last Name">
+          
           <button class="btn btn-success justify-content-center" type="submit">Search</button>
         </form>
       </div>
@@ -61,17 +61,16 @@
     <div class="row">
       <div class="col">
         <div class="card card-custom bg-white border-white border-0">
-          <div class="card-custom-img" style="background-image: url(https://static0.cbrimages.com/wordpress/wp-content/uploads/2019/10/Featured-Image-9.jpg);"></div>
+          <div class="card-custom-img" style="background-image: url({{char_image}});"></div>
           <div class="card-custom-avatar">
-            <img class="img-fluid" src="static/assets/images/miyano.jpg" alt="Avatar" />
+            <img class="img-fluid" src="{{va_img}}" alt="Avatar" />
           </div>
           <div class="card-body" style="overflow-y: auto">
-            <h4 class="card-title">Mamoru Miyano</h4>
-            <p class="card-text text-muted"> Notable Roles</p>
+            <h4 class="card-title">{{full_name}}</h4>
+            <p class="card-text text-muted"> Bio</p>
             <ul>
-              <li>Light Yagami <i class="text-muted">- Death Note</i></li>
-              <li>Death The Kid <i class="text-muted">- Soul Eater</i></li>
-              <li>Shuu Tsukiyama <i class="text-muted">- Tokyo Ghoul</i></li>
+              <li>{{character_list}}<i class="text-muted">- Voice Actor</i></li>
+              
             </ul>
           </div>
           <div class="card-footer" style="background: inherit; border-color: inherit;">
