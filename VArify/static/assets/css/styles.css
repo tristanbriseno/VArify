@@ -125,3 +125,10 @@ h3 {
   font-family: 'Ubuntu' !important;
 }
 
+#resultBg {
+  background-image: url(https://pbs.twimg.com/media/EvjsXIXXcAQOx5l?format=jpg&name=4096x4096);
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
