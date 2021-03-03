@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Raleway&family=Ubuntu&display=swap');
+
 .sidenav {
     height: 100%;
     width: 0;
@@ -5,7 +7,7 @@
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #111;
+    background-color:#4582ec !important;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
@@ -15,7 +17,7 @@
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
-    color: #818181;
+    color:whitesmoke;
     display: block;
     transition: 0.3s;
   }
@@ -51,16 +53,7 @@
   
   /* CARDS */
   
-  .row.heading h2 {
-    color: #fff;
-    font-size: 52.52px;
-    line-height: 95px;
-    font-weight: 400;
-    text-align: center;
-    margin: 0 0 40px;
-    padding-bottom: 20px;
-    text-transform: uppercase;
-}
+
 ul{
   margin:0;
   padding:0;
@@ -164,4 +157,17 @@ ul{
 }
  .cnt-block .follow-us li .fa:hover{ 
    color:#025a8e;
+}
+
+body, p {
+  font-family: 'Raleway' !important;
+}
+
+h3 {
+  font-family: 'Ubuntu' !important;
+}
+
+h1 {
+  font-family: 'Caveat' !important;
+  font-size: 48px !important;
 }

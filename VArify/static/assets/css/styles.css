@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Raleway&family=Ubuntu&display=swap');
 
 .sidenav {
   height: 100%;
@@ -6,7 +7,7 @@
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #111;
+  background-color:#4582ec !important;
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
@@ -16,7 +17,7 @@
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
-  color: #818181;
+  color: whitesmoke;
   display: block;
   transition: 0.3s;
 }
@@ -33,6 +34,7 @@
   margin-left: 50px;
 }
 
+
 #main {
   transition: margin-left .5s;
   padding: 16px;
@@ -45,10 +47,19 @@
 
 /* FORM */
 
-.form {
-  width: 100% !important;
+
+.form-control {
+  width: 500px !important;
+  background-color: #f2f9fa !important;
 }
 
+.btn {
+  border-radius: 8px !important;
+}
+
+::placeholder {
+  color: #b1c7cc !important;
+}
 
 /* CARDS */
 
@@ -95,9 +106,34 @@
   left: 1.25rem;
   width: 100px;
   height: 100px;
+  object-fit: cover;
 }
 
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
+}
+
+ul li {
+  list-style-type: none;
+}
+
+.display-2 {
+  font-family: 'Caveat';
+}
+
+body, p {
+  font-family: 'Raleway' !important;
+}
+
+h3 {
+  font-family: 'Ubuntu' !important;
+}
+
+#resultBg {
+  background-image: url(https://pbs.twimg.com/media/EvjsXIXXcAQOx5l?format=jpg&name=4096x4096);
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
