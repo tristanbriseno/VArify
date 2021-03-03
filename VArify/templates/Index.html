@@ -12,6 +12,7 @@
   
   <!-- CSS -->
   <link rel="stylesheet" href="static/assets/css/styles.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
   <!-- BOOTSTRAP -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/litera/bootstrap.min.css">
@@ -70,7 +71,7 @@
     <hr>
 
     <div id="resultBg" class="d-flex justify-content-center align-items-center">
-      <div class="card card-custom bg-white border-white border-0" style="width: 25rem;">
+      <div data-aos="fade-up" class="card card-custom bg-white border-white border-0" style="width: 25rem;">
         <div class="card-custom-img" style="background-image: url({{char_image}});"></div>
         <div class="card-custom-avatar">
           <img class="img-fluid" src="{{va_img}}"alt="Avatar" />
@@ -220,6 +221,7 @@
 
 <!--SCRIPTS-->
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+
  /* JQUERY */
 </script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
@@ -231,6 +233,8 @@
 <script src='https://kit.fontawesome.com/a076d05399.js'>
 /* ICON JS */
 </script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
 <script>
   function openNav() {
     document.getElementById("mySidenav").style.width = "250px";
@@ -242,7 +246,9 @@
     document.getElementById("main").style.marginLeft= "0";
   }
 </script>
-
+<script>
+  AOS.init();
+</script>
 
 </body>
 </html>
